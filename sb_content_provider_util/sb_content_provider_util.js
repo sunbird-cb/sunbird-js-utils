@@ -601,5 +601,6 @@ module.exports = {
   userSearch: userSearch,
   releaseDialcode: releaseDialcode,
   reserveDialcode: reserveDialcode,
-  readQuestion: readQuestion
+  readQuestion: readQuestion,
+  compositeSearchV4: compositeSearchV4
 }
