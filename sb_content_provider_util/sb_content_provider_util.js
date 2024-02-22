@@ -75,6 +75,12 @@ compositeSearch = function (data, headers, cb) {
   sendRequest(options, cb)
 }
 
+compositeSearchV4 = function (data, headers, cb) {
+  var url = configUtil.getConfig('SEARCH_SERVICE_BASE_URL') + configUtil.getConfig('SEARCH_URI_V4')
+  var options = getHttpOptions(url, data, 'POST', false, headers, configUtil.getConfig('SEARCH_SERVICE_AUTHORIZATION_TOKEN'))
+  sendRequest(options, cb)
+}
+
 updateContent = function (data, content_id, headers, cb) {
   var url = configUtil.getConfig('CONTENT_SERVICE_BASE_URL') + configUtil.getConfig('UPDATE_CONTENT_URI') + '/' + content_id
   var options = getHttpOptions(url, data, 'PATCH', false, headers)
