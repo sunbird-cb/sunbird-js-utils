@@ -85,5 +85,6 @@ module.exports = {
   userSearch: ekStepContentUtil.userSearch,
   releaseDialcode: ekStepContentUtil.releaseDialcode,
   reserveDialcode: ekStepContentUtil.reserveDialcode,
-  readQuestion: ekStepContentUtil.readQuestion
+  readQuestion: ekStepContentUtil.readQuestion,
+  compositeSearchV4: ekStepContentUtil.compositeSearchV4
 }
