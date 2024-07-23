@@ -141,9 +141,10 @@ frameworkPublish = function (data, frameworkId, headers, cb) {
   sendRequest(options, cb)
 }
 
-frameworkTermRetire = function (content_id, headers, cb) {
+frameworkTermRetire = function (content_id, headers, query, cb) {
   var url = configUtil.getConfig('CONTENT_REPO_BASE_URL') + configUtil.getConfig('FRAMEWORK_Term_Retire_URI') + '/' + content_id
   var options = getHttpOptions(url, null, 'DELETE', false, headers)
+  options.qs = query
   sendRequest(options, cb)
 }
 
