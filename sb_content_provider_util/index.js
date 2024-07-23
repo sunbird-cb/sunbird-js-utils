@@ -86,5 +86,6 @@ module.exports = {
   releaseDialcode: ekStepContentUtil.releaseDialcode,
   reserveDialcode: ekStepContentUtil.reserveDialcode,
   readQuestion: ekStepContentUtil.readQuestion,
-  compositeSearchV4: ekStepContentUtil.compositeSearchV4
+  compositeSearchV4: ekStepContentUtil.compositeSearchV4,
+  frameworkTermRetire: ekStepFrameworkUtil.frameworkTermRetire,
 }
