@@ -200,5 +200,5 @@ module.exports = {
   frameworkCategoryInstanceCreate: frameworkCategoryInstanceCreate,
   frameworkCategoryInstanceUpdate: frameworkCategoryInstanceUpdate,
   frameworkPublish: frameworkPublish,
-  frameworkRetireTerm: frameworkRetireTerm
+  frameworkTermRetire: frameworkTermRetire
 }
