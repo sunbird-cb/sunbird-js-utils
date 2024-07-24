@@ -140,6 +140,14 @@ frameworkPublish = function (data, frameworkId, headers, cb) {
   var options = getHttpOptions(url, data, 'POST', false, headers)
   sendRequest(options, cb)
 }
+
+frameworkTermRetire = function (content_id, headers, query, cb) {
+  var url = configUtil.getConfig('CONTENT_REPO_BASE_URL') + configUtil.getConfig('FRAMEWORK_Term_Retire_URI') + '/' + content_id
+  var options = getHttpOptions(url, null, 'DELETE', false, headers)
+  options.qs = query
+  sendRequest(options, cb)
+}
+
 /**
  * This function used to generate api_call log event
  * @param {Object} data
@@ -191,5 +199,6 @@ module.exports = {
   frameworkCategoryInstanceSearch: frameworkCategoryInstanceSearch,
   frameworkCategoryInstanceCreate: frameworkCategoryInstanceCreate,
   frameworkCategoryInstanceUpdate: frameworkCategoryInstanceUpdate,
-  frameworkPublish: frameworkPublish
+  frameworkPublish: frameworkPublish,
+  frameworkRetireTerm: frameworkRetireTerm
 }
